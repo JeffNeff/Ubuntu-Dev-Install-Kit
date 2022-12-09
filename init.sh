@@ -1,4 +1,3 @@
-#!/bin/bash
 ## Update the system.
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y git make gcc g++ wget curl
@@ -35,9 +34,6 @@ go install github.com/google/ko@latest
 
 ## Install Microk8s.
 sudo snap install microk8s --classic
-sudo usermod -a -G microk8s $USER
-sudo chown -f -R $USER ~/.kube
-sudo microk8s enable dns storage ingress metallb 
 
 ## Install Kubectx.
 sudo snap install kubectx --classic
@@ -50,6 +46,9 @@ sudo snap install k9s --classic
 
 ## Install Kustomize.
 sudo snap install kustomize --classic
+
+## Install Kompose
+sudo snap install kompose --classic
 
 ## Install Kubeval.
 sudo snap install kubeval --classic
@@ -69,6 +68,10 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ## Install Digital Ocean CLI.
 curl -sL https://repos.insights.digitalocean.com/install.sh | sudo bash
 
-## Install VSCode
+## Install VSCode.
 sudo snap install --classic code
 
+## Install Ngrok.
+sudo snap install ngrok
+
+echo "ngrok config add-authtoken "
