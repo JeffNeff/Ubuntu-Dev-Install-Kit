@@ -34,7 +34,9 @@ go install github.com/google/ko@latest
 
 ## Install Microk8s.
 sudo snap install microk8s --classic
-
+sudo usermod -a -G microk8s $USER
+sudo chown -f -R $USER ~/.kube
+    
 ## Install Kubectx.
 sudo snap install kubectx --classic
 
