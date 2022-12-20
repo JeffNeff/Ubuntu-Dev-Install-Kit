@@ -43,9 +43,6 @@ sudo snap install kubectx --classic
 ## Install Kubens.
 sudo snap install kubens --classic
 
-## Install K9s.
-sudo snap install k9s --classic
-
 ## Install Kustomize.
 sudo snap install kustomize --classic
 
