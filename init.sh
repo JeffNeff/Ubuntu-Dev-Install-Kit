@@ -40,17 +40,11 @@ sudo chown -f -R $USER ~/.kube
 ## Install Kubectx.
 sudo snap install kubectx --classic
 
-## Install Kubens.
-sudo snap install kubens --classic
-
 ## Install Kustomize.
 sudo snap install kustomize --classic
 
 ## Install Kompose
 sudo snap install kompose --classic
-
-## Install Kubeval.
-sudo snap install kubeval --classic
 
 ## Install Google Cloud SDK.
 #sudo apt-get install -y apt-transport-https ca-certificates gnupg
