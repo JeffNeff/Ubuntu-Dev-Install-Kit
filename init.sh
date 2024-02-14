@@ -3,8 +3,8 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install -y git make gcc g++ wget curl
 
 ## Install Go.
-wget https://go.dev/dl/go1.19.4.linux-amd64.tar.gz
-sudo tar -C /usr/local -xzf go1.19.4.linux-amd64.tar.gz
+wget go.dev/dl/go1.22.0.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.profile
 echo 'export PATH=$PATH:/home/$USER/go/bin' >> ~/.profile
 
